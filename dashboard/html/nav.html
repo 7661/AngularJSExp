@@ -24,7 +24,51 @@
 		          <ul class="nav navbar-nav navbar-right">
 		            <li><a href="#">Dashboard</a></li>
 		            <li><a href="#">Settings</a></li>
-		            <li><a href="#">Profile</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="glyphicon glyphicon-envelope"></span>
+							</a>
+							<ul class="dropdown-menu dropdown-messages">
+								<li>
+									<a href="#">
+										<li ng-repeat="phone in phones">
+      									<span>{{phone.name}}</span>
+      										<p>{{phone.snippet}}</p>
+    									</li>									
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="glyphicon glyphicon-bell"></span>
+							</a>
+							<ul class="dropdown-menu dropdown-messages">
+								<li>
+									<a href="#">
+										<li ng-repeat="phone in phones">
+      									<span>{{phone.name}}</span>
+      										<p>{{phone.snippet}}</p>
+    									</li>									
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="glyphicon glyphicon-user"></span>
+							</a>
+							<ul class="dropdown-menu dropdown-messages">
+								<li>
+									<a href="#">
+										<li ng-repeat="phone in phones">
+      									<span>{{phone.name}}</span>
+      										<p>{{phone.snippet}}</p>
+    									</li>									
+									</a>
+								</li>
+							</ul>
+						</li>
 		            <li><a href="#">Help</a></li>
 		          </ul>
 		          <form class="navbar-form navbar-right">
@@ -34,5 +78,6 @@
 		      </div>
 		    </nav>
       	<script src="../js/myApp.js"></script>
+      	<script src="../js/nav.js"></script>
    </body>
 </html>
